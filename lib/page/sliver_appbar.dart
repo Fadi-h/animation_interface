@@ -10,16 +10,16 @@ class CustomBar extends StatefulWidget {
 class _CustomBarState extends State<CustomBar> {
 
   List<String> items = [
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    'https://images.pexels.com/photos/3616252/pexels-photo-3616252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    'assets/images/1.jpg',
+    'assets/images/2.jpg',
+    'assets/images/3.jpg',
+    'assets/images/4.jpg',
+    'assets/images/5.jpg',
+    'assets/images/6.jpg',
+    'assets/images/7.jpg',
+    'assets/images/8.jpg',
+    'assets/images/9.jpg',
+    'assets/images/10.jpg',
   ];
 
   @override
@@ -76,7 +76,7 @@ class _CustomBarState extends State<CustomBar> {
                   borderRadius: BorderRadius.circular(25),
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage(
+                    image: AssetImage(
                       items[index],
                     )
                   )
