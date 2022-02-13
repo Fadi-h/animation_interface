@@ -76,86 +76,141 @@ class _ChooseOptionState extends State<ChooseOption> with SingleTickerProviderSt
                 ),
               ),
               const SizedBox(height: 25),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.7,
-                height: MediaQuery.of(context).size.height * 0.08,
-                decoration: BoxDecoration(
-                    color: Color(0xFF4F6367),
-                    borderRadius: BorderRadius.circular(25)
-                ),
-                child: TextButton(onPressed: (){
+              GestureDetector(
+                onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomBar()));
                 },
-                    child: AnimatedTextKit(
-                      repeatForever: true,
-                      animatedTexts: [
-                        RotateAnimatedText('Sliver AppBar', textStyle: TextStyle(color: Colors.white))
-                      ],
-                    )
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  decoration: BoxDecoration(
+                      color: Color(0xFF4F6367),
+                      borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Center(
+                      child: AnimatedTextKit(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomBar()));
+                        },
+                        repeatForever: true,
+                        animatedTexts: [
+                          RotateAnimatedText('Sliver AppBar', textStyle: TextStyle(color: Colors.white))
+                        ],
+                      )
+                  ),
                 ),
               ),
               const SizedBox(height: 25,),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.7,
-                height: MediaQuery.of(context).size.height * 0.08,
-                decoration: BoxDecoration(
-                    color: Color(0xFF4F6367),
-                    borderRadius: BorderRadius.circular(25)
-                ),
-                child: TextButton(onPressed: (){
+              GestureDetector(
+                onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>IntroAnimation()));
                 },
-                    child: AnimatedTextKit(
-                      repeatForever: true,
-                      animatedTexts: [
-                        RotateAnimatedText('Animation Intro', textStyle: TextStyle(color: Colors.white))
-                      ],
-                    )
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  decoration: BoxDecoration(
+                      color: Color(0xFF4F6367),
+                      borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Center(
+                      child: AnimatedTextKit(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>IntroAnimation()));
+                        },
+                        repeatForever: true,
+                        animatedTexts: [
+                          ScaleAnimatedText('Animation Intro',duration: Duration(milliseconds: 4000), textStyle: TextStyle(color: Colors.white))
+                        ],
+                      )
+                  ),
                 ),
               ),
               const SizedBox(height: 25,),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.7,
-                height: MediaQuery.of(context).size.height * 0.08,
-                decoration: BoxDecoration(
-                    color: Color(0xFF4F6367),
-                    borderRadius: BorderRadius.circular(25)
-                ),
-                child: TextButton(onPressed: (){
+              GestureDetector(
+                onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ValueAnimation()));
                 },
-                    child: AnimatedTextKit(
-                      repeatForever: true,
-                      animatedTexts: [
-                        RotateAnimatedText('Animation value text', textStyle: TextStyle(color: Colors.white))
-                      ],
-                    )
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  decoration: BoxDecoration(
+                      color: Color(0xFF4F6367),
+                      borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Center(
+                      child: AnimatedTextKit(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ValueAnimation()));
+                        },
+                        repeatForever: true,
+                        animatedTexts: [
+                          RotateAnimatedText('Animation value text', textStyle: TextStyle(color: Colors.white))
+                        ],
+                      )
+                  ),
                 ),
               ),
               const SizedBox(height: 25,),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.7,
-                height: MediaQuery.of(context).size.height * 0.08,
-                decoration: BoxDecoration(
-                    color: Color(0xFF4F6367),
-                    borderRadius: BorderRadius.circular(25)
-                ),
-                child: TextButton(onPressed: (){
+              GestureDetector(
+                onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>PageOne()));
                 },
-                    child: AnimatedTextKit(
-                      repeatForever: true,
-                      animatedTexts: [
-                        RotateAnimatedText('Animation PageRoute', textStyle: TextStyle(color: Colors.white))
-                      ],
-                    )
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  decoration: BoxDecoration(
+                      color: Color(0xFF4F6367),
+                      borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Center(
+                      child: AnimatedTextKit(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>PageOne()));
+                        },
+                        repeatForever: true,
+                        animatedTexts: [
+                          RotateAnimatedText('Animation PageRoute', textStyle: TextStyle(color: Colors.white))
+                        ],
+                      )
+                  ),
                 ),
               ),
               const SizedBox(height: 25,),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Wrap(
                 children: [
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.menu_close,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.arrow_menu,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.list_view,
+                      progress: controller,
+                    ),
+                  ),
                   IconButton(
                     onPressed: (){
                       toggleIocn();
@@ -185,6 +240,17 @@ class _ChooseOptionState extends State<ChooseOption> with SingleTickerProviderSt
                     icon: AnimatedIcon(
                       color: Color(0xFF4F6367),
                       size: 40,
+                      icon: AnimatedIcons.add_event,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
                       icon: AnimatedIcons.ellipsis_search,
                       progress: controller,
                     ),
@@ -197,6 +263,17 @@ class _ChooseOptionState extends State<ChooseOption> with SingleTickerProviderSt
                       color: Color(0xFF4F6367),
                       size: 40,
                       icon: AnimatedIcons.menu_home,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.event_add,
                       progress: controller,
                     ),
                   ),

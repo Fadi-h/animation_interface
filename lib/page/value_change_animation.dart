@@ -39,10 +39,22 @@ class _ValueAnimationState extends State<ValueAnimation> with SingleTickerProvid
           body: SafeArea(
             child: Center(
               child: Container(
-                width: 150,
+                width: 300,
                 height: 150,
                 child: Column(
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 25),
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: IconButton(
+                          onPressed: (){
+                            Navigator.pop(context);
+                          },
+                          icon: Icon(Icons.arrow_back),
+                        ),
+                      ),
+                    ),
                     AnimatedOpacity(
                       opacity: animation1!.value != 10 ? 1.0 : 0.0,
                       duration: const Duration(milliseconds: 300),

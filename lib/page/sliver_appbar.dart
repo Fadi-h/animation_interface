@@ -48,7 +48,9 @@ class _CustomBarState extends State<CustomBar> {
               ),
               backgroundColor: Colors.pinkAccent,
               expandedHeight: 220,
-              leading: Icon(Icons.arrow_back),
+              leading: IconButton(icon:Icon(Icons.arrow_back),onPressed: (){
+                Navigator.pop(context);
+              }),
             ),
             _buildGrid(),
           ],
