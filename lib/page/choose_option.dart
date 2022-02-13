@@ -152,17 +152,57 @@ class _ChooseOptionState extends State<ChooseOption> with SingleTickerProviderSt
                 ),
               ),
               const SizedBox(height: 25,),
-              IconButton(
-                onPressed: (){
-                  toggleIocn();
-                },
-                icon: AnimatedIcon(
-                  color: Color(0xFF4F6367),
-                  size: 40,
-                  icon: AnimatedIcons.close_menu,
-                  progress: controller,
-                ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.close_menu,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.play_pause,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.ellipsis_search,
+                      progress: controller,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: (){
+                      toggleIocn();
+                    },
+                    icon: AnimatedIcon(
+                      color: Color(0xFF4F6367),
+                      size: 40,
+                      icon: AnimatedIcons.menu_home,
+                      progress: controller,
+                    ),
+                  ),
+                ],
               ),
+
             ],
           ),
         ),

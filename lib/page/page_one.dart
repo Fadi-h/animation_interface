@@ -151,28 +151,6 @@ class _PageOneState extends State<PageOne> {
               ),
             ),
             const SizedBox(height: 15,),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.8,
-              padding: EdgeInsets.all(7),
-              decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(50)
-              ),
-              child: TextButton(
-                onPressed: (){
-                  Navigator.push(
-                    context,
-                    PageRouteBuilder(
-                      pageBuilder: (context,animation, animationTwo) => PageTwo(),
-                      transitionsBuilder: (context, animation, animationTwo, child){
-                        return FadeTransition(opacity: animation,child: child,);
-                      },
-                    ),
-                  );
-                },
-                child: Text('go the page two - 5th Fade',style: TextStyle(color: Colors.white,fontSize: 20),),
-              ),
-            ),
             const SizedBox(height: 15,),
             Container(
               width: MediaQuery.of(context).size.width * 0.4,

@@ -60,7 +60,7 @@ class _CustomBarState extends State<CustomBar> {
   _buildGrid(){
     return SliverToBoxAdapter(
       child: Container(
-        padding: EdgeInsets.only(top: 30, right: 10,left: 10),
+        padding: EdgeInsets.only(bottom: 30, top: 30, right: 10,left: 10),
         child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
