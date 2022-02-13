@@ -43,7 +43,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 1st / Slide',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 1st / Slide',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20),),
               ),
             ),
             const SizedBox(height: 15,),
@@ -70,7 +70,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 2nd / Slide',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 2nd / Slide',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 16),),
               ),
             ),
             const SizedBox(height: 15,),
@@ -97,7 +97,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 3rd / Zoom',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 3rd / Zoom',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 16),),
               ),
             ),
             const SizedBox(height: 15,),
@@ -124,7 +124,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 4th Rotation',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 4th Rotation',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 16),),
               ),
             ),
             const SizedBox(height: 15,),
@@ -147,7 +147,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 5th Fade',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 5th Fade',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 16),),
               ),
             ),
             const SizedBox(height: 15,),
