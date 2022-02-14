@@ -43,7 +43,7 @@ class _PageOneState extends State<PageOne> {
                     ),
                   );
                 },
-                child: Text('go the page two - 1st / Slide',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('go the page two - 1st / Slide',textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 16),),
               ),
             ),
             const SizedBox(height: 15,),
